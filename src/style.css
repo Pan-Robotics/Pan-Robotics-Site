@@ -1,0 +1,537 @@
+body
+{
+    color: white;
+    background: white;
+}
+
+/* For Mobile Devices*/
+@media screen and (max-width: 800px)
+{
+    ul.nav
+    {
+        background-color: white;
+        list-style-type: none;
+        display: block;
+        text-align: right;
+        float: right;
+        width: 85px;
+        overflow: hidden;
+    }
+    li a
+    {
+        display: block;
+        color: rgba(255, 170, 0, 1);
+        float: inline-end;
+        text-align: center;
+        font-size: 2vw;
+        padding: 0px 0px;
+        text-decoration: none;
+    }
+    li.dropdown 
+    {
+        display:  block;
+    } 
+    .ndropdown a:hover 
+    {
+        background-color: white;
+        color: green;
+    }
+    .dropdown a:hover 
+    {
+        background-color: white;
+        color: green;
+    }
+    .dropdown-content 
+    {
+        display: contents;
+        float: left;
+        position: relative;
+        background-color: #f9f9f9;
+        min-width: 80px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a 
+    {
+        color:rgba(0, 0, 0, 0.85);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover 
+    {
+        background-color: #f1f1f1;
+        color: rgba(0, 0, 0, 0.85);
+    }
+    .dropdown:hover .dropdown-content 
+    {
+        display: block;
+    }
+    thead th:not(:first-child)
+    {
+        display: none;
+    }
+    td 
+    {
+        display: block;
+        font-size: 15px;
+        width: auto;
+    }
+    th
+    {
+        display: none;
+    }
+    td[data-th]:before  
+    {
+        content: attr(data-th);
+    }
+}
+
+/* For Desktop Devices*/
+ul
+{
+    color: turquoise;
+    text-align: left;
+}
+ul.nav
+{
+    font-size: 20px;
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+li.list 
+{
+    float: none;
+}
+li
+{
+    float: left;
+}
+li a, .dropbtn 
+{
+    display: inline-block;
+    color: rgba(255, 170, 0, 1);
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn 
+{
+    background-color: white;
+    color: green;
+} 
+li.dropdown 
+{
+    display: inline-block;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    color: rgba(255, 170, 0, 1);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover 
+{
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+h1
+{
+    color: rgba(255, 170, 0, 1);
+    text-align: center;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+h2
+{
+    color: green;
+    text-align: center;
+    size: 15pt;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+h3
+{
+    color: green;
+    size: 15pt;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+h4
+{
+    color: greenyellow;
+    size: 15pt;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+h5
+{
+    color: yellow;
+    size: 25pt;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+p
+{
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+
+a
+{
+    color: tomato;
+    text-align: left;
+}
+
+img.center1
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+img.center2 
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+img.center3
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+img.center4
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+img.center5
+{ 
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+img.center6
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+img.center7
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+img.center8
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+img.center9
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+img.center10
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+table 
+{
+    border: 1px solid white;
+    text-align: justify;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+th
+{
+    text-align: center;
+    padding: 5px;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+td
+{
+    text-align: justify;
+    padding: 15px;
+    font-size: 15px;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+td.black
+{
+    text-align: justify;
+    background: rgb(10,10,10);
+    padding: 15px;
+    font-size: 15px;
+    -moz-text-size-adjust: inherit;
+    -webkit-text-size-adjust: inherit;
+    -ms-text-size-adjust: inherit;
+}
+table.borderless 
+{
+    border: 0px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.ProjectList 
+{
+    border: 0px solid grey;
+    width: 70%;
+    background: rgb(20,20,20);
+    margin-left: auto;
+    margin-right: auto;
+}
+table.Text
+{
+    border: 0px solid grey;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div
+{ 
+    margin: 0px; 
+} 
+
+div.nav
+{
+    display: block;
+    background-color: white;
+}
+div.navIcon
+{
+    position: relative;
+    float: right;
+    width: 5%;
+}
+
+div.card
+{
+    background-color: whitesmoke;
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 50px 50px;
+}
+div.cardcenter
+{
+    background-color: whitesmoke;
+    position: relative;
+    float: none;
+    width: 15%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 50px 50px;
+}
+div.cardimage
+{
+    position: relative;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.cardtext
+{
+    background-color: whitesmoke;
+    position: relative;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.pagetop
+{
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+div.pagetopimage
+{
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    float: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+div.pagetoptext
+{
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    float: right;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+div.pageproducts
+{
+    background-color: white;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+div.product1
+{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.product2
+{
+    position: relative;
+    float: left;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.product3
+{
+    position: relative;
+    float: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.pageabout
+{
+    background-color: rgba(230, 230, 230, 1);;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+div.pageteam
+{
+    background-color: white;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+div.pagetechnology
+{
+    background-color: rgba(230, 230, 230, 1);
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+div.pagecontact
+{
+    background-color: rgba(0, 255, 255, 1);
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px)
+{
+    div.pagetopimage
+    {
+        background-color: rgba(255, 255, 255, 1);
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    div.product1
+    {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.product2
+    {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.product3
+    {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.nav
+    {
+        background-color: rgba(255, 170, 0, 1);
+        display: none;
+    }
+    div.navIcon
+    {
+        width: 10%;
+    }
+}
