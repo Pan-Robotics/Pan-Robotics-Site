@@ -1,30 +1,46 @@
+
 body
 {
-    color: white;
-    background: white;
+    background-color: white; /* Fallback color for browsers that do not support gradients */
+    background-image: linear-gradient(to bottom, rgba(245, 223, 78, 0) 0%, rgba(221, 171, 45, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This makes the background fixed during scrolling */
 }
 
-/* For Mobile Devices*/
+/* rgba(218, 140, 32, 0.5);For Mobile Devices*/
 @media screen and (max-width: 800px)
 {
+    div.nav
+    {
+        display: block;
+        float: right;
+        position: relative;
+        background-color: white;
+        padding: 0px 100px;
+    }
     ul.nav
     {
-        background-color: white;
+        background-color: goldenrod;
         list-style-type: none;
         display: block;
-        text-align: right;
+        text-align: center;
         float: right;
-        width: 85px;
+        width: 100px;
         overflow: hidden;
+        position: absolute;
     }
     li a
     {
+        position: relative;
         display: block;
         color: rgba(255, 120, 0, 1);
-        float: inline-end;
+        float:left;
         text-align: center;
-        font-size: 2vw;
-        padding: 0px 0px;
+        text-shadow: black;
+        font-size: 3.23vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 10px;
         text-decoration: none;
     }
     li.dropdown 
@@ -33,7 +49,7 @@ body
     } 
     .ndropdown a:hover 
     {
-        background-color: white;
+        background-color: goldenrod;
         color: green;
     }
     .dropdown a:hover 
@@ -44,7 +60,7 @@ body
     .dropdown-content 
     {
         display: contents;
-        float: left;
+        float: right;
         position: relative;
         background-color: #f9f9f9;
         min-width: 80px;
@@ -57,7 +73,7 @@ body
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
     .dropdown-content a:hover 
     {
@@ -91,12 +107,13 @@ body
 /* For Desktop Devices*/
 ul
 {
-    color: turquoise;
+    color: green;
     text-align: left;
 }
+
 ul.nav
 {
-    font-size: 20px;
+    font-size: 32px;
     list-style-type: none;
     display: block;
     margin: 0;
@@ -159,23 +176,41 @@ li.dropdown
 
 h1
 {
-    color: rgba(255, 120, 0, 1);
-    font-family: Georgia;
+    color: green;
+    font-family: fantasy;
     text-align: center;
-    font-size: 35pt;
+    font-size: 50pt;
+    position: relative;
+    background: -webkit-linear-gradient(rgba(0, 255, 0, 0.8), #008000);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
+/*
 h2
 {
     color: green;
     text-align: center;
-    font-family: Georgia;
+    font-family: fantasy;
     font-size: 35pt;
+}*/
+h2
+{
+    font-size: 35pt; /* Adjust the font size as needed */
+    font-family: fantasy;
+    color: #008000; /* Base green color */
+    background: -webkit-linear-gradient(rgba(0, 255, 0, 0.8), #008000);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 h3
 {
-    color: green;
+    color: rgb(4, 83, 36);
     text-align: center;
-    font-family: Georgia;
+    font-family: fantasy;
     font-size: 18pt;
 }
 h4
@@ -196,10 +231,10 @@ p
     font-size: 12pt;
     font-weight: bold;
 }
-
 a
 {
     color: tomato;
+    font-family: fantasy;
     text-align: left;
 }
 
@@ -348,46 +383,72 @@ div.navIcon
     width: 5%;
 }
 
-div.card
+div.card3
+{
+    background-color: whitesmoke;
+    position: relative;
+    float: left;
+    width: 66%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 50px 50px;
+    opacity: 0.5;
+}
+div.card3:hover
+{
+    opacity: 1;
+} 
+div.card4
+{
+    background-color: whitesmoke;
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 80%;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 50px 50px;
+    opacity: 0.5;
+}
+div.card4:hover
+{
+    opacity: 1;
+} 
+div.cardleft
 {
     background-color: whitesmoke;
     position: relative;
     float: left;
     width: 15%;
-    height: 320px;
-    margin-left: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding: 50px 50px;
-}
-div.cardcenter
-{
-    background-color: whitesmoke;
-    position: relative;
-    float: none;
-    width: 15%;
     height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20%;
+    margin-right: 0%;
     margin-top: 50px;
     margin-bottom: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 50px 50px;
 }
-div.cardcenter2
+div.cardright
 {
     background-color: whitesmoke;
     position: relative;
-    float: none;
+    float: right;
     width: 15%;
     height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 7.5%;
+    margin-bottom: auto;
+    margin-left: 0%;
+    margin-right: 20%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 50px 50px;
@@ -399,6 +460,8 @@ div.cardimage
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 75px;
 }
 div.cardtext
 {
@@ -408,112 +471,254 @@ div.cardtext
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 100px;
 }
 
 div.pagetop
 {
-    background-color: rgba(255, 255, 255, 1);
     position: relative;
-    float: left;
+    clear: both;
+}
+
+div.pagetop:before
+{
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: url("../images/Products/Power/AMS1117-Voltage-Regulator/AMS-reg-Breakout_3D_Model_2-waky\ clear.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }
 div.pagetopimage
 {
-    background-color: rgba(255, 255, 255, 1);
     position: relative;
     float: none;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 0px;
+    opacity: 1;
 }
 div.pagetoptext
 {
-    background-color: rgba(255, 255, 255, 1);
     position: relative;
     float: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 200px;
     width: 50%;
-    margin-bottom: 50px;
 }
 
 div.pageproducts
 {
-    background-color: white;
     position: relative;
-    float: left;
-    width: 100%;
+    display: flex;
+    justify-content: space-around; /* This will space the child elements evenly */
+    clear: both;
 }
-div.product1
+div.pageproducts:before
 {
-    position: relative;
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: url("../images/Products/IO/Robust-IO-Expander/3D_5-wacky.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+
     float: left;
-    width: 50%;
+
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-div.product2
+
+div.pagetools
 {
     position: relative;
+    display: flex;
+    justify-content: space-around; /* This will space the child elements evenly */
+    clear: both;
+}
+div.pagetools:before
+{
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: url("../images/Products/IO/Robust-IO-Expander/Robust IO Expander Schematic Close Clear.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+
     float: left;
-    width: 25%;
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-div.product3
-{
-    position: relative;
-    float: none;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.pageabout
-{
-    background-color: rgba(230, 230, 230, 1);;
-    position: relative;
-    float: left;
-    width: 100%;
-}
-
-div.pagetechnology
-{
-    background-color: rgba(230, 230, 230, 1);
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 2px;
-}
-
-div.pageteam
-{
-    background-color: white;
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 div.pagecontact
 {
-    background-color: rgba(200,255, 200, 1);
     position: relative;
+    display: flex;
+    justify-content: space-around; /* This will space the child elements evenly */
+    clear: both;
+}
+div.pagecontact:before
+{
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: url("../images/Representations/final-conop.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
     float: left;
     width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 150px;
 }
 
+.product-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-info h2, .product-info h3 {
+    margin: 20px 0;
+}
+
+.product-info ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+}
+
+.product-info ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display:inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+header, nav ul, nav ul li, nav ul li a, section {
+    /* Basic reset for spacing and list styles */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#home, #features, #about, #contact {
+    /* Styling for individual sections */
+}
+
+#home h1, #features h2, #about h2, #contact h2 {
+    margin-bottom: 15px;
+}
+
+#features ul, #features li {
+    /* Reset list styles for features */
+    list-style: none;
+}
+
+#features li {
+    margin-bottom: 10px;
+}
+
+
+/* <-!><iframe src="https://myhub.autodesk360.com/ue2be4f9c/shares/public/SHd38bfQT1fb47330c99ecbe49bbb4f11c27?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+*/
 @media screen and (max-width: 800px)
 {
+    body
+    {
+        color: white;
+        background: goldenrod;
+    }
     h2
     {
         font-size: 25pt;
     }
-    div.card
+    img.center2 
+    {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    div.card3
     {
         width: 50%;
         margin-left: auto;
@@ -521,18 +726,26 @@ div.pagecontact
         float: none;
         height: 350px;
     }
-    div.cardcenter
-    {
-        width: 20%;
-        margin-left: auto;
-        margin-right: auto;
-        height: 200px;
-    }
-    div.cardcenter2
+    div.card4
     {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
+        float: none;
+        height: 400px;
+    }
+    div.cardleft
+    {
+        width: 20%;
+        margin-left: 30%;
+        margin-right: 25%;
+        height: 200px;
+    }
+    div.cardright
+    {
+        width: 50%;
+        margin-left: 35%;
+        margin-right: 15%;
     }
     div.cardtext
     {
@@ -540,30 +753,126 @@ div.pagecontact
     }
     div.pagetopimage
     {
-        background-color: rgba(255, 255, 255, 1);
         position: relative;
         float: left;
         width: 100%;
         margin-top: 200px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
-    div.product1
+    div.pagetop
     {
-        width: 100%;
+        position: relative;
+        clear: both;
+    }
+
+    div.pagetop:before
+    {
+        content: ' ';
+        display: block;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        background-image: none;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        opacity: 0.08;
+        width: auto;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        
     }
-    div.product2
+
+    div.pageproducts
     {
-        width: 100%;
+        position: relative;
+        flex-direction: column;
+        align-items: center; /* This will center the child elements */
+        clear: both;
+    }
+    div.pageproducts:before
+    {
+        content: ' ';
+        display: block;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        background-image: none;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        opacity: 0.08;
+        width: auto;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    div.product3
+
+    div.pagetools
     {
-        width: 100%;
+        position: relative;
+        flex-direction: column;
+        align-items: center; /* This will center the child elements */
+        clear: both;
+    }
+    div.pagetools:before
+    {
+        content: ' ';
+        display: block;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        background-image: none;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        opacity: 0.08;
+        width: auto;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    div.pagecontact
+    {
+        position: relative;
+        flex-direction: column;
+        align-items: center; /* This will center the child elements */
+        clear: both;
+    }
+    div.pagecontact:before
+    {
+        content: ' ';
+        display: block;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        background-image: none;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        opacity: 0.08;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     div.nav
     {
